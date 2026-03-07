@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "role": "Product Engineer",
+    "greeting": "Hi, I'm",
+    "description": "Scaling high-level products for the global market.",
+    "subdescription": "Designing solutions where visual precision meets solid business logic.",
+    "cv": "Download CV",
+    "projects": "View Projects"
+  },
+  "terminal": {
+    "experience": "5+ Years",
+    "location": "Buenos Aires, AR (Global Delivery)",
+    "availability": "Ready for Global Impact"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Selected",
+    "view_case": "View Case",
+    "spain": {
+      "title": "Enterprise Ecosystem • Spain",
+      "role": "Technical Lead",
+      "impact": "20% Perf. Boost",
+      "desc": "Technical leadership in the modernization of 3 critical platforms for the European market. Focus on scalability and component architecture.",
+      "achievements": [
+        "Legacy code migration",
+        "Optimization of loading times",
+        "Full Stack Architecture"
+      ],
+      "tags": ["Angular", "Node.js", "Java", "SQL"]
+    },
+    "usa": {
+      "title": "Database SPA • USA",
+      "desc": "Development of a high-complexity Single Page Application for an American firm using Next.js.",
+      "tags": ["Next.js", "TypeScript", "Tailwind"]
+    },
+    "mentorship": {
+      "title": "Leadership and Mentorship",
+      "desc": "Mentorship of interns at Bewise, ensuring code quality and the adoption of best practices in the team.",
+      "tags": ["Leadership", "Code Quality", "Agile"]
+    }
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "My Evolution",
+    "bio": "Ingeniero de Producto con más de 5 años de experiencia. Mi camino ha sido una constante búsqueda por entender el ciclo de vida completo del software: desde la precisión del píxel en el Frontend hasta la robustez de la lógica en el Backend.",
+    "timeline": [
+      {
+        "year": "2021 - Actualidad",
+        "title": "Seniority & Global Scale",
+        "company": "Bewise (Projects USA/Spain)",
+        "desc": "Technical leadership in corporate applications. Focus on scalable architectures and optimization of complex web ecosystems."
+      },
+      {
+        "year": "Mentorship",
+        "title": "Talent Development",
+        "desc": "Mentorship of interns and junior engineers, promoting code quality standards and engineering best practices."
+      },
+      {
+        "year": "2025 - 2026",
+        "title": "Backend Pivot",
+        "desc": "Strategic transition towards robust server architectures. Implementation of solutions with Node.js, Java, and SQL databases."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's Chat",
+    "description": "Currently open to new opportunities in multinational environments and large-scale projects.",
+    "cta": "Let's Chat About Your Next Project",
+    "copy_email": "Copy Email",
+    "copied": "Copied!"
+  }
+}
