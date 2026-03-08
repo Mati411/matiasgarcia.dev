@@ -34,6 +34,11 @@
       ],
       "tags": ["Angular", "Node.js", "Java", "SQL"]
     },
+    "bago": {
+      "title": "SAP Sales Engine • Bagó",
+      "desc": "Core development of a complex internal sales system featuring dynamic pricing engines and seamless SAP integration.",
+      "tags": ["Angular", "Java", "SAP Integration", "H2DB", "Business Logic"]
+    },
     "usa": {
       "title": "Database SPA • USA",
       "desc": "Development of a high-complexity Single Page Application for an American firm using Next.js.",
@@ -42,7 +47,7 @@
     "mentorship": {
       "title": "Leadership and Mentorship",
       "desc": "Mentorship of interns at Bewise, ensuring code quality and the adoption of best practices in the team.",
-      "tags": ["Leadership", "Code Quality", "Agile"]
+      "tags": ["Leadership", "Mentoring", "Code Quality", "Agile", "Co-Working"]
     }
   },
   "about": {

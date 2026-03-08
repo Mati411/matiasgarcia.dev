@@ -7,6 +7,7 @@ import {
   Users,
   CheckCircle2,
   TrendingUp,
+  Code2,
 } from "lucide-react";
 
 const ProjectCard = ({ project, icon: Icon, size = "small", dict }: any) => (
@@ -110,22 +111,32 @@ export default function ProjectsGrid({ dict }: { dict: any }) {
         </h2>
       </div>
 
-      {/* FIX: auto-rows-fr solo para desktop (md:). En mobile usa auto-rows-auto */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:auto-rows-fr">
-        <ProjectCard
-          project={dict.projects.spain}
-          icon={Globe}
-          size="large"
-          dict={dict}
-        />
+      {/* Actualizamos a 2 columnas en desktop para que con 4 cards quede un grid 2x2 armónico */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Proyecto Principal: España (Sigue siendo el más grande) */}
+        <div className="lg:col-span-2">
+          <ProjectCard
+            project={dict.projects.spain}
+            icon={Globe}
+            size="large"
+            dict={dict}
+          />
+        </div>
 
-        <ProjectCard project={dict.projects.usa} icon={Database} dict={dict} />
+        {/* Bagó (Card Destacada por su complejidad de Backend) */}
+        <ProjectCard project={dict.projects.bago} icon={Database} dict={dict} />
 
-        <ProjectCard
-          project={dict.projects.mentorship}
-          icon={Users}
-          dict={dict}
-        />
+        {/* USA */}
+        <ProjectCard project={dict.projects.usa} icon={Code2} dict={dict} />
+
+        {/* Mentoría (Ocupando su lugar para cerrar el grid) */}
+        <div className="lg:col-span-2">
+          <ProjectCard
+            project={dict.projects.mentorship}
+            icon={Users}
+            dict={dict}
+          />
+        </div>
       </div>
     </section>
   );

@@ -34,6 +34,11 @@
       ],
       "tags": ["Angular", "Node.js", "Java", "SQL"]
     },
+    "bago": {
+      "title": "Sistema de Gestión SAP • Bagó",
+      "desc": "Desarrollo de un motor de ventas interno complejo con lógica de precios dinámica, gestión de pedidos y sincronización directa con SAP.",
+      "tags": ["Angular", "Java", "SAP Integration", "H2DB", "Business Logic"]
+    },
     "usa": {
       "title": "Database SPA • USA",
       "desc": "Desarrollo de una Single Page Application de alta complejidad para una firma estadounidense utilizando Next.js.",
@@ -42,7 +47,7 @@
     "mentorship": {
       "title": "Liderazgo y Mentoría",
       "desc": "Tutor de pasantes en Bewise, asegurando la calidad del código y la adopción de mejores prácticas en el equipo.",
-      "tags": ["Leadership", "Code Quality", "Agile"]
+      "tags": ["Leadership", "Mentoring", "Code Quality", "Agile", "Co-Working"]
     }
   },
   "about": {
