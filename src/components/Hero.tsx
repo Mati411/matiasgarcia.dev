@@ -4,6 +4,10 @@ import { motion } from "framer-motion";
 import Terminal from "./Terminal";
 
 export default function Hero({ dict }: any) {
+  const cvFileName =
+    dict.lang === "en" ? "matias-garcia-cv-en.pdf" : "matias-garcia-cv-es.pdf";
+  const cvUrl = `/files/${cvFileName}`;
+
   return (
     <section className="relative min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 sm:px-10 md:px-40 pt-32 pb-20 lg:py-20 overflow-hidden bg-black selection:bg-blue-500/20 gap-16 lg:gap-0">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,#0a192f_0%,transparent_50%)] opacity-40" />
@@ -42,9 +46,13 @@ export default function Hero({ dict }: any) {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          <button className="bg-white text-black px-8 sm:px-10 py-4 rounded-full font-black transition duration-200 flex items-center gap-2 cursor-pointer hover:bg-neutral-900 hover:text-white text-sm sm:text-base">
+          <a
+            href={cvUrl}
+            download={cvFileName}
+            className="bg-white text-black px-8 sm:px-10 py-4 rounded-full font-black transition duration-200 flex items-center gap-2 cursor-pointer hover:bg-neutral-900 hover:text-white text-sm sm:text-base no-underline"
+          >
             <FileText size={20} /> {dict.hero.cv}
-          </button>
+          </a>
           <a
             href="#projects"
             className="group border border-neutral-800 text-neutral-300 px-8 sm:px-10 py-4 rounded-full font-bold hover:bg-neutral-900 transition-all flex items-center gap-2 cursor-pointer text-sm sm:text-base"
