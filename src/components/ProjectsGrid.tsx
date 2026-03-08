@@ -102,7 +102,7 @@ export default function ProjectsGrid({ dict }: { dict: any }) {
         <span className="text-blue-500 font-mono text-sm tracking-[0.4em] uppercase">
           {dict.projects.title}
         </span>
-        <h2 className="text-6xl md:text-8xl font-black tracking-tighter text-white mt-4 uppercase">
+        <h2 className="text-4xl sm:text-6xl md:text-8xl font-black tracking-tighter text-white mt-4 uppercase break-words leading-none">
           {dict.projects.subtitle}
         </h2>
       </div>
