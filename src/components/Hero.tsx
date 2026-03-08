@@ -19,7 +19,7 @@ export default function Hero({ dict }: any) {
             {dict.hero.role}
           </span>
 
-          <h1 className="flex flex-col text-5xl sm:text-7xl md:text-[9rem] font-black tracking-[-0.07em] leading-none uppercase mt-6">
+          <h1 className="flex flex-col text-7xl sm:text-7xl md:text-[9rem] font-black tracking-[-0.07em] leading-none uppercase">
             <span className="relative text-white">Matias</span>
             <span className="relative z-10 -mt-6 sm:-mt-10 md:-mt-16 text-neutral-600 outline-text italic transition-all duration-300">
               Garcia
@@ -45,13 +45,16 @@ export default function Hero({ dict }: any) {
           <button className="bg-white text-black px-8 sm:px-10 py-4 rounded-full font-black transition duration-200 flex items-center gap-2 cursor-pointer hover:bg-neutral-900 hover:text-white text-sm sm:text-base">
             <FileText size={20} /> {dict.hero.cv}
           </button>
-          <button className="group border border-neutral-800 text-neutral-300 px-8 sm:px-10 py-4 rounded-full font-bold hover:bg-neutral-900 transition-all flex items-center gap-2 cursor-pointer text-sm sm:text-base">
+          <a
+            href="#projects"
+            className="group border border-neutral-800 text-neutral-300 px-8 sm:px-10 py-4 rounded-full font-bold hover:bg-neutral-900 transition-all flex items-center gap-2 cursor-pointer text-sm sm:text-base"
+          >
             {dict.hero.projects}
             <ArrowRight
               size={18}
               className="group-hover:translate-x-1 transition-transform"
             />
-          </button>
+          </a>
         </motion.div>
       </div>
 

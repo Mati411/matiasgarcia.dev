@@ -88,9 +88,6 @@ const ProjectCard = ({ project, icon: Icon, size = "small", dict }: any) => (
           </span>
         ))}
       </div>
-      <button className="flex items-center gap-2 text-sm font-bold text-neutral-300 group-hover:text-white transition-colors uppercase tracking-widest">
-        {dict.view_case} <ExternalLink size={14} />
-      </button>
     </div>
   </motion.div>
 );
