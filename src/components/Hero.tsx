@@ -12,7 +12,6 @@ export default function Hero({ dict }: any) {
     <section className="relative min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 sm:px-10 md:px-40 pt-32 pb-20 lg:py-20 overflow-hidden bg-black selection:bg-blue-500/20 gap-16 lg:gap-0">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,#0a192f_0%,transparent_50%)] opacity-40" />
 
-      {/* Contenido Izquierdo */}
       <div className="flex-1 z-20 space-y-8 w-full">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -66,14 +65,13 @@ export default function Hero({ dict }: any) {
         </motion.div>
       </div>
 
-      {/* Lado Derecho: Terminal con margen superior para móviles */}
       <div className="flex-1 w-full relative z-10 flex items-center justify-center lg:justify-end">
         <Terminal dict={dict} />
       </div>
 
       <style jsx global>{`
         .outline-text {
-          -webkit-text-stroke: 1px #666;
+          -webkit-text-stroke: 1px #808080;
           color: transparent;
           paint-order: stroke fill;
           letter-spacing: 0.02em;

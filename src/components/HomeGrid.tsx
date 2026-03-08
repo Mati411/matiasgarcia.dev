@@ -37,7 +37,6 @@ const GridItem = ({
 export default function HomeGrid() {
   return (
     <section className="max-w-7xl mx-auto p-4 md:p-8 grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[180px]">
-      {/* 1. Perfil Principal (2x2) */}
       <GridItem className="md:col-span-2 md:row-span-2 bg-gradient-to-br from-[#1a1a1a] to-[#0a0a0a]">
         <div className="flex flex-col h-full justify-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -52,7 +51,6 @@ export default function HomeGrid() {
         </div>
       </GridItem>
 
-      {/* 2. Experiencia Global (2x1) */}
       <GridItem className="md:col-span-2" title="Mercados Globales">
         <div className="flex items-center gap-4">
           <Globe className="text-blue-500 w-8 h-8" />
@@ -63,7 +61,6 @@ export default function HomeGrid() {
         </div>
       </GridItem>
 
-      {/* 3. Stack Principal (1x1) */}
       <GridItem title="Core Stack">
         <div className="grid grid-cols-2 gap-2 text-neutral-400">
           <div className="flex items-center gap-2 font-semibold text-white">
@@ -79,7 +76,6 @@ export default function HomeGrid() {
         </div>
       </GridItem>
 
-      {/* 4. Impacto (1x1) - El dato del 20% que hablamos */}
       <GridItem className="bg-emerald-950/20 border-emerald-900/30">
         <div className="text-center">
           <span className="text-4xl font-bold text-emerald-500">-20%</span>
@@ -89,7 +85,6 @@ export default function HomeGrid() {
         </div>
       </GridItem>
 
-      {/* 5. Case Study: España (2x2) */}
       <GridItem
         className="md:col-span-2 md:row-span-2"
         title="Proyecto Destacado: España"
@@ -117,7 +112,6 @@ export default function HomeGrid() {
         </div>
       </GridItem>
 
-      {/* 6. GitHub / Open Source (1x1) */}
       <GridItem className="flex items-center justify-center group cursor-pointer">
         <a
           href="https://github.com/Mati411"
@@ -129,7 +123,6 @@ export default function HomeGrid() {
         </a>
       </GridItem>
 
-      {/* 7. Liderazgo (1x1) */}
       <GridItem title="Mentoría">
         <p className="text-sm text-neutral-400">
           Tutor de <span className="text-white">pasantes</span> en Bewise,

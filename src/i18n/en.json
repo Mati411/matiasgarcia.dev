@@ -30,7 +30,10 @@
       "achievements": [
         "Legacy code migration",
         "Optimization of loading times",
-        "Full Stack Architecture"
+        "Full Stack Architecture",
+        "Code maintenance",
+        "Development of new features",
+        "Proactivity in problem solving and task planning"
       ],
       "tags": ["Angular", "Node.js", "Java", "SQL"]
     },
@@ -53,12 +56,12 @@
   "about": {
     "title": "About",
     "subtitle": "My Evolution",
-    "bio": "Ingeniero de Producto con más de 5 años de experiencia. Mi camino ha sido una constante búsqueda por entender el ciclo de vida completo del software: desde la precisión del píxel en el Frontend hasta la robustez de la lógica en el Backend.",
+    "bio": "Product Engineer with more than 5 years of experience. My journey has been a constant search to understand the complete software lifecycle: from pixel precision in the Frontend to the robustness of logic in the Backend.",
     "timeline": [
       {
-        "year": "2021 - Actualidad",
+        "year": "2021 - Present",
         "title": "Seniority & Global Scale",
-        "company": "Bewise (Projects USA/Spain)",
+        "company": "Bewise (Projects Arg/USA/Spain)",
         "desc": "Technical leadership in corporate applications. Focus on scalable architectures and optimization of complex web ecosystems."
       },
       {

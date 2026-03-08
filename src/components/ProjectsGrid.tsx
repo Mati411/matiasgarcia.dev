@@ -14,7 +14,6 @@ const ProjectCard = ({ project, icon: Icon, size = "small", dict }: any) => (
   <motion.div
     whileHover={{ y: -8 }}
     transition={{ type: "spring", stiffness: 300 }}
-    /* Ajustamos padding: de p-6 en mobile a p-10 en desktop */
     className={`group relative bg-neutral-900/20 backdrop-blur-xl border border-neutral-800 p-6 md:p-10 rounded-[2rem] md:rounded-[2.5rem] flex flex-col justify-between overflow-hidden shadow-2xl ${
       size === "large" ? "md:col-span-2 md:row-span-2" : "col-span-1"
     }`}
@@ -58,7 +57,7 @@ const ProjectCard = ({ project, icon: Icon, size = "small", dict }: any) => (
         </div>
 
         {size === "large" && (
-          <div className="bg-white/5 rounded-2xl md:rounded-3xl p-5 md:p-6 border border-white/5 space-y-3 md:space-y-4 mt-4 md:mt-0">
+          <div className="bg-white/5 rounded-2xl md:rounded-3xl p-5 md:p-6 border border-white/5 space-y-3 md:space-y-4 mt-4 md:mt-0 h-fit">
             <h4 className="text-[9px] md:text-[10px] font-mono text-neutral-400 uppercase tracking-widest border-b border-white/10 pb-2">
               Key Achievements
             </h4>
@@ -78,7 +77,6 @@ const ProjectCard = ({ project, icon: Icon, size = "small", dict }: any) => (
       </div>
     </div>
 
-    {/* Ajustamos el margen superior para mobile */}
     <div
       className={`flex flex-col gap-4 md:gap-6 ${size === "large" ? "mt-8 md:mt-12" : "mt-6 md:mt-8"}`}
     >
@@ -106,14 +104,12 @@ export default function ProjectsGrid({ dict }: { dict: any }) {
         <span className="text-blue-500 font-mono text-sm tracking-[0.4em] uppercase font-bold">
           {dict.projects.title}
         </span>
-        <h2 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tighter text-white mt-4 uppercase break-words leading-[0.85]">
+        <h2 className="text-4xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tighter text-white mt-2 uppercase break-words leading-[0.85]">
           {dict.projects.subtitle}
         </h2>
       </div>
 
-      {/* Actualizamos a 2 columnas en desktop para que con 4 cards quede un grid 2x2 armónico */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Proyecto Principal: España (Sigue siendo el más grande) */}
         <div className="lg:col-span-2">
           <ProjectCard
             project={dict.projects.spain}
@@ -123,13 +119,10 @@ export default function ProjectsGrid({ dict }: { dict: any }) {
           />
         </div>
 
-        {/* Bagó (Card Destacada por su complejidad de Backend) */}
         <ProjectCard project={dict.projects.bago} icon={Database} dict={dict} />
 
-        {/* USA */}
         <ProjectCard project={dict.projects.usa} icon={Code2} dict={dict} />
 
-        {/* Mentoría (Ocupando su lugar para cerrar el grid) */}
         <div className="lg:col-span-2">
           <ProjectCard
             project={dict.projects.mentorship}

@@ -1,13 +1,29 @@
 "use client";
 import Logo from "@/assets/icons/Logo";
-import { Github, Linkedin, Languages } from "lucide-react";
+import { AnimatePresence, motion, Variants } from "framer-motion";
+import { Github, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 export default function Navbar({ dict, lang }: { dict: any; lang: string }) {
   const pathname = usePathname();
+  const [isLogoHovered, setIsLogoHovered] = useState(false);
 
-  // Función simple para cambiar de idioma en la URL
+  const textVariants: Variants = {
+    hidden: { opacity: 0, x: -10 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.3, ease: "easeOut" },
+    },
+    exit: {
+      opacity: 0,
+      x: -5,
+      transition: { duration: 0.2 },
+    },
+  };
+
   const redirectedPathname = (locale: string) => {
     if (!pathname) return "/";
     const segments = pathname.split("/");
@@ -17,12 +33,33 @@ export default function Navbar({ dict, lang }: { dict: any; lang: string }) {
 
   return (
     <nav className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-black/50 backdrop-blur-md border-b border-neutral-900">
-      <Link href={`/${lang}`} className="flex items-center gap-3 group">
-        <Logo
-          className="w-12 h-12 text-white group-hover:text-blue-500 transition-colors"
-          strokeWidth={2}
-        />
-      </Link>
+      <div className="flex items-center relative h-12 min-w-[50px]">
+        <Link
+          href={`/${lang}`}
+          className="flex items-center group"
+          onMouseEnter={() => setIsLogoHovered(true)}
+          onMouseLeave={() => setIsLogoHovered(false)}
+        >
+          <Logo
+            className={`w-12 h-12 transition-colors duration-300 ${isLogoHovered ? "text-blue-500" : "text-white group-hover:text-blue-500"}`}
+            strokeWidth={2}
+          />
+
+          <AnimatePresence>
+            {isLogoHovered && (
+              <motion.span
+                variants={textVariants}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+                className="absolute left-14 whitespace-nowrap text-sm font-mono text-neutral-400 uppercase tracking-[0.4em] font-bold pointer-events-none"
+              >
+                Matias Garcia
+              </motion.span>
+            )}
+          </AnimatePresence>
+        </Link>
+      </div>
 
       <div className="hidden md:flex items-center gap-6 text-sm text-neutral-400">
         <a href="#projects" className="hover:text-white transition-colors">
@@ -37,7 +74,6 @@ export default function Navbar({ dict, lang }: { dict: any; lang: string }) {
       </div>
 
       <div className="flex items-center gap-2">
-        {/* Selector de Idioma */}
         <div className="flex items-center gap-2 border-r border-neutral-800 pr-4">
           <Link
             href={redirectedPathname("en")}

@@ -16,9 +16,6 @@ export default function Logo({
       role="img"
       aria-label="Matías García Logo"
     >
-      {/* Corchetes Estructurales (simbolizan código y MG abstracta) 
-        El trazo es limpio y angular para un look enterprise moderno.
-      */}
       <path
         d="M25 20 H15 V80 H25"
         stroke="currentColor"
@@ -34,13 +31,10 @@ export default function Logo({
         strokeLinejoin="round"
       />
 
-      {/* La "M" de Matías - Geométrica y centrada 
-        El pico de la M imita una terminal prompt abstracta
-      */}
       <path
         d="M35 80 V20 L50 35 L65 20 V80"
         stroke="currentColor"
-        strokeWidth={strokeWidth * 1.5} // Ligeramente más grueso para impacto
+        strokeWidth={strokeWidth * 1.5}
         strokeLinecap="round"
         strokeLinejoin="round"
       />

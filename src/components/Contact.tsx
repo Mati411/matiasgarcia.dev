@@ -28,8 +28,7 @@ export default function Contact({ dict }: { dict: any }) {
           <span className="text-blue-500 font-mono text-sm tracking-[0.4em] uppercase font-bold">
             {dict.contact.title}
           </span>
-          {/* Bajamos de 7xl a 5xl en mobile */}
-          <h2 className="text-5xl sm:text-7xl md:text-[10rem] font-black tracking-tighter text-white mt-4 uppercase leading-none">
+          <h2 className="text-4xl sm:text-7xl md:text-[10rem] font-black tracking-tighter text-white mt-2 uppercase leading-none">
             {dict.contact.subtitle}
           </h2>
         </div>
@@ -39,13 +38,11 @@ export default function Contact({ dict }: { dict: any }) {
         </p>
 
         <div className="pt-10 w-full flex justify-center">
-          {/* Cambiamos inline-flex por flex w-full y max-w para evitar overflow */}
           <div className="relative flex flex-col md:flex-row items-center gap-6 bg-neutral-900/40 backdrop-blur-xl border border-neutral-800 p-6 sm:p-8 md:p-12 rounded-[2rem] sm:rounded-[3rem] group w-full max-w-4xl">
             <div className="space-y-2 text-center md:text-left w-full overflow-hidden">
               <span className="text-[10px] font-mono text-blue-500 uppercase tracking-widest font-bold">
                 Direct Email
               </span>
-              {/* break-all para que el mail no rompa el contenedor */}
               <h3 className="text-xl sm:text-3xl md:text-5xl font-black text-white tracking-tighter break-all">
                 @{email.split("@")[0]}
               </h3>
@@ -61,7 +58,6 @@ export default function Contact({ dict }: { dict: any }) {
           </div>
         </div>
 
-        {/* Links Secundarios */}
         <div className="flex justify-center gap-8 pt-12">
           <a
             href="https://www.linkedin.com/in/matias-garcia1204"
@@ -80,7 +76,6 @@ export default function Contact({ dict }: { dict: any }) {
         </div>
       </motion.div>
 
-      {/* Footer sutil */}
       <footer className="mt-20 pt-10 border-t border-neutral-900 flex flex-col md:flex-row justify-between items-center gap-4">
         <span className="text-neutral-600 font-mono text-[10px] uppercase tracking-widest">
           © 2026 MATÍAS GARCÍA — BUENOS AIRES, AR

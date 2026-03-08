@@ -30,7 +30,10 @@
       "achievements": [
         "Migración de código legacy",
         "Optimización de tiempos de carga",
-        "Arquitectura Full Stack"
+        "Arquitectura Full Stack",
+        "Mantenimiento de código",
+        "Desarrollo de nuevas funcionalidades",
+        "Proactividad en la resolución de problemas y planificación de tareas"
       ],
       "tags": ["Angular", "Node.js", "Java", "SQL"]
     },
@@ -58,7 +61,7 @@
       {
         "year": "2021 - Actualidad",
         "title": "Seniority & Escala Global",
-        "company": "Bewise (Proyectos USA/España)",
+        "company": "Bewise (Proyectos Arg/USA/España)",
         "desc": "Liderazgo técnico en aplicaciones corporativas críticas. Foco en arquitecturas escalables y optimización de ecosistemas web complejos."
       },
       {
