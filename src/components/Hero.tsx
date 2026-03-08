@@ -73,15 +73,17 @@ export default function Hero({ dict }: any) {
 
       <style jsx global>{`
         .outline-text {
-          /* Usamos un color ligeramente más claro y un stroke más fino para evitar el "sangrado" en móvil */
           -webkit-text-stroke: 1px #666;
           color: transparent;
           paint-order: stroke fill;
+          letter-spacing: 0.02em;
           transition: -webkit-text-stroke 0.3s ease;
         }
+
         @media (min-width: 768px) {
           .outline-text {
             -webkit-text-stroke: 1.5px #808080;
+            letter-spacing: normal;
           }
         }
       `}</style>
